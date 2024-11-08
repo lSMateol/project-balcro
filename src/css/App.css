@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Abril Fatface', cursive;
+    color: #8a2be2;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f1f1f1;
+}
+
+.loader {
+    width: 50px;
+    aspect-ratio: 1;
+    display: grid;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+.loader:before,
+.loader:after {
+    content: "";
+    grid-area: 1/1;
+    border-radius: 50%;
+    background: #f03355;
+    -webkit-mask: repeating-linear-gradient(#000 0 5px, #0000 0 10px);
+    animation: l35 1.5s infinite;
+}
+
+.loader:after {
+    -webkit-mask: repeating-linear-gradient(#0000 0 5px, #000 0 10px);
+    --s: -1;
+}
+
+@keyframes l35 {
+    0%,
+    10% {
+        transform: translate(0) rotate(0);
+    }
+    35% {
+        transform: translate(calc(var(--s, 1) * 50%)) rotate(0);
+    }
+    66% {
+        transform: translate(calc(var(--s, 1) * 50%)) rotate(calc(var(--s, 1) * 180deg));
+    }
+    90%,
+    100% {
+        transform: translate(0) rotate(calc(var(--s, 1) * 180deg));
+    }
+}
+
+.landing-page {
+    height: 100vh;
+    width: 100vw;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Necesario para posicionar el pseudo-elemento */
+    background-image: url('/img/Fondo_principal.png');
+   background-position: center;
+    color: #8a2be2;
+    display: none;
+}
+
+
+.square {
+    position: relative;
+    margin: 0 10px;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    border-radius: 32% 58% 69% 43% / 48% 32% 59% 55%;
+    transition: 0.5s;
+    animation: animate 6s linear infinite;
+}
+
+.linkedin:hover span:nth-child(1) {
+    border: none;
+    background: #f07e6e;
+}
+
+
+.square span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animate 4s linear infinite;
+}
+
+.lobby:hover span:nth-child(2) {
+    border: none;
+    background: #f07e6e;
+}
+
+.square span:nth-child(3) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    border-radius: 31% 45% 74% 35% / 38% 56% 51% 87%;
+    transition: 0.5s;
+    animation: animate2 10s linear infinite;
+}
+
+.lobby:hover span:nth-child(3) {
+    border: none;
+    background: #f07e6e;
+}
+
+ 
+.content-lobby {
+    position: relative;
+    padding: 40px 60px;
+    color: #fff;
+    text-align: center;
+    transition: 0.5s;
+    z-index: 1000;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+.welcome {
+    font-size: 22px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.title {
+    font-size: 90px;
+    margin: 0 0 5px 0;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-size: 42px;
+    margin: 0 0 40px 0;
+    font-weight: normal;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn{
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;      
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+.btn-primary {
+    border: solid;  
+    background-color: #8a2be2;
+    border-radius: 10px 60px 30px;
+    color: white;
+}
+
+.btn-primary:hover{
+    background-color: white;
+    color: #8a2be2;
+    border: 2px solid #8a2be2;
+}
+
+.btn-secondary {
+    border: solid;  
+    background-color: white;
+    border-radius: 10px 60px 30px;
+    color: #8a2be2;
+    border: 2px solid #8a2be2;
+}
+
+.btn-secondary:hover{    
+    background-color: #8a2be2;
+    color: white;
+    border: 2px solid wheat;
+}
+
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .welcome {
+        font-size: 12px;
+    }
+
+    .title {
+        font-size: 60px;
+    }
+
+    .subtitle {
+        font-size: 24px;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
