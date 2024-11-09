@@ -5,7 +5,8 @@ import Slider from '@/components/Slidder';
 import ScheduleCalendar from '@/components/Inicio/ScheduleCalendar';
 import InfoMetSection from '@/components/Inicio/InfoMetSection';
 import SocialMedia from '@/components/Socialmedia';
-//import FooterUbi from '@/components/FooterUbi';
+import UbiMap from '@/components/UbiMap';
+import Footer from '@/components/Footer';
 
 const Inicio = () => {
     return(
@@ -14,8 +15,9 @@ const Inicio = () => {
         <SocialMedia/>    
         <Slider/>  
         <InfoMetSection/>        
-        <ScheduleCalendar/>                                          
-                                               
+        <ScheduleCalendar/>                                       
+        <UbiMap/>                                       
+        <Footer/>                                       
       </>
     );
 };

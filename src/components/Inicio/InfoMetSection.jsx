@@ -29,7 +29,7 @@ export default function ContentSections() {
           </div>
           <div className="flex-1">
             <Image
-              src="/placeholder.svg"
+              src="/img/parejabaile.jpg"
               alt="Bailarines en acción"
               width={500}
               height={400}

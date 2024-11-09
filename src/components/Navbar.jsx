@@ -55,12 +55,12 @@ export default function Navbar() {
       <nav>
         <ul style={styles.nav}>
           <li style={styles.navItem}>
-            <Link href="/Pag1" passHref>
+            <Link href="/Inicio" passHref>
               <span style={{ ...styles.navLink, ...styles.activeNavLink, ...styles.btnA }}>Inicio</span>
             </Link>
           </li>
           <li style={styles.navItem}>
-            <Link href="/clases" passHref>
+            <Link href="/Clases" passHref>
               <span style={{ ...styles.navLink, ...styles.btnB }}>Clases</span>
             </Link>
           </li>
