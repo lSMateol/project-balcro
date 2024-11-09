@@ -73,15 +73,13 @@ export default function Navbar() {
             <Link href="/sobre-nosotros" passHref>
               <span style={{ ...styles.navLink, ...styles.btnB }}>Sobre nosotros</span>
             </Link>
-          </li>
-        </ul>
-        <ul style={styles.nav}>
-          <li style={styles.navItem}>
+          </li>  
+            <li style={styles.navItem}>
             <Link href="/registro" passHref>
               <span style={{ ...styles.navLink, ...styles.btnA }}>Registrate</span>
             </Link>
-          </li>
-        </ul>
+          </li>          
+        </ul>        
       </nav>
     </header>
   );

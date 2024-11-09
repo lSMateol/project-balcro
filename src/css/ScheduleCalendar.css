@@ -1,0 +1,124 @@
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  
+  .schedule-section {
+    margin-bottom: 4rem;
+  }
+  
+  .schedule-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #14b8a6;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .schedule-subtitle {
+    font-size: 1.5rem;
+    color: #14b8a6;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .schedule-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .schedule-button {
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: #d1a2f1;
+    color: #7c4d93;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .schedule-button:hover {
+    background-color: #d3a0e2;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .schedule-note {
+    text-align: center;
+    color: #4b5563;
+    max-width: 800px;
+    margin: 2rem auto;
+  }
+  
+  .calendar-section {
+    background: linear-gradient(to bottom right, #a7c6f4, #d7a5eb, #f8c3f6);
+    border-radius: 1rem;
+    padding: 2rem;
+  }
+  
+  .calendar-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #14b8a6;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .calendar-subtitle {
+    text-align: center;
+    color: #4b5563;
+    margin-bottom: 2rem;
+  }
+  
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1rem;
+  }
+  
+  .calendar-day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 0.75rem;
+    padding: 1rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .calendar-day:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .calendar-day-number {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
+  .calendar-day-event {
+    font-size: 0.875rem;
+    color: #4b5563;
+    text-align: center;
+  }
+  
+  .button-close {
+    background-color: #14b8a6;
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+  }
+  
+  .button-close:hover {
+    background-color: #10b981;
+  }
+  

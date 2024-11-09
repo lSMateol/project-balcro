@@ -1,12 +1,12 @@
 import React from 'react';
-import Inicio from '@/components/Index';
+import Lobby from '@/components/Index';
 
-const index = () => {
+const Index = () => {
     return(
       <>
-        <Inicio/>        
+        <Lobby/>        
       </>
     );
 };
 
-export default index;
+export default Index;

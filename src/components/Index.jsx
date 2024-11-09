@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect } from 'react';
+import Link from 'next/link';
 import '@/css/App.css';
 
 const App = () => {
@@ -9,7 +10,7 @@ const App = () => {
       document.getElementById("loader").style.display = "none";
       document.getElementById("landing-page").style.display = "flex";
     }, 2000); // Puedes cambiar este tiempo
-  }, []);
+  }, []);  
 
   return(
     <>
@@ -20,13 +21,15 @@ const App = () => {
           <span></span>
           <span></span>
           <div className="content-lobby">
-            <p className="welcome">bienvenidos a</p>
+            <p className="welcome">Bienvenidos a</p>
             <h1 className="title">Tejiendo Ritmos y Saberes</h1>
-            <h2 className="subtitle">Academia y Costura</h2>
-            <div className="buttons">
-              <a href="/Pag1" className="btn btn-primary">INGRESA</a>
+            <h2 className="subtitle">Academia y Costura</h2>            
+            <nav className="buttons">
+              <div className="btn btn-primary">
+                <Link href="/Inicio"passHref>Inicio</Link> 
+              </div>                              
               <a href="https://wa.me/c/573502204664" className="btn btn-secondary" target="_blank" rel="noopener noreferrer">E-COMMERCE WHATSAPP</a>
-            </div>
+            </nav>
           </div>
         </div>
       </div>
