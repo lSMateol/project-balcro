@@ -29,8 +29,8 @@ export default function Navbar() {
         </button>
 
         <ul className={`${styles.menu_gen} ${isMenuOpen ? styles.show : ''}`}>
-          <li><Link href="/inici">Inicio</Link></li>
-          <li><Link href="/clase">Clases</Link></li>
+          <li><Link href="/inicio">Inicio</Link></li>
+          <li><Link href="/clases">Clases</Link></li>
           <li><Link href="/crochet">Crochet</Link></li>
           <li><Link href="/sobre-nosotros">Sobre nosotros</Link></li>
         </ul>
