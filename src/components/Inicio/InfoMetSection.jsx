@@ -23,7 +23,7 @@ export default function ContentSections() {
               </span>
               , ofreciéndote una experiencia única donde el movimiento y el arte se
               entrelazan. Aprende nuevas técnicas, disfruta del proceso creativo y
-              conéctate con otros apasionados. ¡Únete a nosotros y deja que tu
+              conéctate con otros apasionados. ¡Únete a nosotros y deja que tu  
               pasión teja tu propio ritmo!
             </p>
           </div>

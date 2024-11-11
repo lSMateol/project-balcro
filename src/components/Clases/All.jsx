@@ -8,7 +8,7 @@ export default function LandingPage() {
   const slides = [
     {
       image: '/img/aprenderbailar.jpg',
-      title: '¿Quieres aprender a bailar?',
+      title: '¿Quieres aprender a bailar?.',
       text: 'Adéntrate en nuestra academia y descubre la pasión por el movimiento con nuestros cursos de salsa, bachata y más.'
     },
     // Add more slides as needed
