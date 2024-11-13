@@ -22,12 +22,7 @@
     "next-auth": "^4.24.10",
     "react": "19.0.0-rc-66855b96-20241106",
     "react-dom": "19.0.0-rc-66855b96-20241106",
-<<<<<<< HEAD
     "react-hook-form": "^7.53.2",
-=======
-    "react-intersection-observer": "^9.13.1",
-    "styled-components": "^6.1.13",
->>>>>>> julian
     "tailwind-merge": "^2.5.4",
     "tailwindcss-animate": "^1.0.7"
   },
