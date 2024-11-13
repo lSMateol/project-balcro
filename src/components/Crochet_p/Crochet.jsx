@@ -328,7 +328,7 @@ export default function Crochet() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
           >
-            <Link href="/subscribe" className="inline-block bg-emerald-600 text-white font-bold py-3 px-8 rounded-full hover:bg-emerald-700 transition duration-300 transform hover:scale-105 shadow-lg">
+            <Link href="/auth/register" className="inline-block bg-emerald-600 text-white font-bold py-3 px-8 rounded-full hover:bg-emerald-700 transition duration-300 transform hover:scale-105 shadow-lg">
               Suscríbete Ahora
             </Link>
           </motion.div>
