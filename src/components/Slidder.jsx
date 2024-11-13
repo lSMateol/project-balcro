@@ -11,22 +11,22 @@ export default function HeroSlider() {
   const slides = [
     {
       image: "/img/slide1.jpg",
-      title: "¡Despierta tu pasión por la danza! Únete a nuestras clases y +aprende con los mejores. ¡Baila al ritmo de la vida!",
+      title: "¡Despierta tu pasión por la danza!",
       buttonText: "BOTÓN PARA REDIRECCIONAR",
     },
     {
       image: "/img/slide2.jpeg",
-      title: "Exprésate con movimiento y estilo. En nuestra academia, cada paso cuenta. ¡Ven y muestra tu energía!",
+      title: "Exprésate con movimiento y estilo.",
       buttonText: "BOTÓN PARA REDIRECCIONAR",
     },
     {
       image: "/img/slide3.jpg",
-      title: "Da rienda suelta a tu creatividad con nuestro taller de crochet. Te enseñamos a crear obras únicas con tus propias manos.",
+      title: "Da rienda suelta a tu creatividad con nuestro taller de crochet.",
       buttonText: "BOTÓN PARA REDIRECCIONAR",
     },
     {
       image: "/img/slide4.jpg",
-      title: "¡El crochet nunca fue tan divertido! Acompáñanos en eventos especiales y lleva tus proyectos a otro nivel.",
+      title: "¡El crochet nunca fue tan divertido!",
       buttonText: "BOTÓN PARA REDIRECCIONAR",
     },
     // Add more slides as needed
