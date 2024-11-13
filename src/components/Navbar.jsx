@@ -35,9 +35,14 @@ export default function Navbar() {
           <li><Link href="/sobre-nosotros">Sobre nosotros</Link></li>
         </ul>
 
-        <Link href="/registro" className={styles.registro}>
+        <div className="hidden lg:flex lg:items-center lg:space-x-4">
+        <Link href="/auth/register" className={styles.registro}>
           Regístrate
         </Link>
+        <Link href="/auth/login" className={styles.registro}>
+          Inicia sesion
+        </Link>
+        </div>
       </nav>
     </header>
   )

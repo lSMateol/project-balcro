@@ -66,7 +66,7 @@ export default function LandingPage() {
       setCurrentSlide((prev) => (prev + 1) % slides.length)
     }, 5000)
     return () => clearInterval(timer)
-  }, [])
+  }, [slides.length])
 
   return (
     <div className="min-h-screen bg-pink-50">

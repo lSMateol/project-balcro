@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
@@ -11,22 +11,22 @@ export default function HeroSlider() {
   const slides = [
     {
       image: "/img/slide1.jpg",
-      title: "CLASES DE BAILE",
+      title: "¡Despierta tu pasión por la danza! Únete a nuestras clases y +aprende con los mejores. ¡Baila al ritmo de la vida!",
       buttonText: "BOTÓN PARA REDIRECCIONAR",
     },
     {
       image: "/img/slide2.jpeg",
-      title: "UWU",
+      title: "Exprésate con movimiento y estilo. En nuestra academia, cada paso cuenta. ¡Ven y muestra tu energía!",
       buttonText: "BOTÓN PARA REDIRECCIONAR",
     },
     {
       image: "/img/slide3.jpg",
-      title: "ARA ARA ",
+      title: "Da rienda suelta a tu creatividad con nuestro taller de crochet. Te enseñamos a crear obras únicas con tus propias manos.",
       buttonText: "BOTÓN PARA REDIRECCIONAR",
     },
     {
       image: "/img/slide4.jpg",
-      title: "MATENME POR FAVOR",
+      title: "¡El crochet nunca fue tan divertido! Acompáñanos en eventos especiales y lleva tus proyectos a otro nivel.",
       buttonText: "BOTÓN PARA REDIRECCIONAR",
     },
     // Add more slides as needed
@@ -60,9 +60,10 @@ export default function HeroSlider() {
             <Image
               src={slide.image}
               alt="Dance class"
-              layout="fill"
-              objectFit="cover"
-              className="h-full w-full"
+              fill
+              sizes="100vw"
+              style={{ objectFit: "cover" }}
+              priority={index === 0}
             />
             <div className="absolute inset-0 bg-black/20" />
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
