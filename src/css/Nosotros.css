@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Dancing Script', cursive;
+}
+
+.icon-pink svg {
+  width: 48px;
+  height: 48px;
+  color: #FFC0CB;
+}
+
+.container {
+  background: linear-gradient(135deg, #FFF0F5, #FFB6C1);
+}
+
+.header h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service-card, .info-card, .history-section {
+  transition: all 0.3s ease;
+}
+
+.service-card:hover, .info-card:hover {
+  transform: translateY(-5px);
+}
+
+.shadow-text {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 3rem;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+}
+
+/* Nuevos estilos para las secciones adicionales */
+.events-section, .community-section, .projects-section {
+  background-color: #FFF0F5;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.events-section:hover, .community-section:hover, .projects-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo para el fondo de la sección "Sobre Nosotros" */
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/img/about-us-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px);
+  opacity: 0.3;
+  z-index: -1;
+}
+
+/* Estilos para la línea de tiempo en la sección de historia */
+.timeline-container {
+  position: relative;
+  padding: 2rem 0;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #FFC0CB;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 30px;
+  position: relative;
+  margin-bottom: 2rem;
+  width: 50%;
+}
+
+.timeline-item:nth-child(odd) {
+  align-self: flex-end;
+  justify-content: flex-start;
+  padding-left: 30px;
+  padding-right: 0;
+}
+
+.timeline-content {
+  background-color: #FFF0F5;
+  border-radius: 5px;
+  padding: 1rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-date {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #FF69B4;
+}
+
+.timeline-dot {
+  width: 16px;
+  height: 16px;
+  background-color: #FF69B4;
+  border-radius: 50%;
+  position: absolute;
+  left: -8px;
+  top: 0;
+}
+
+.timeline-item:nth-child(odd) .timeline-dot {
+  right: -8px;
+  left: auto;
+}

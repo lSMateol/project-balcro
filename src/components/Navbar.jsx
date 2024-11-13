@@ -32,7 +32,7 @@ export default function Navbar() {
           <li><Link href="/inicio">Inicio</Link></li>
           <li><Link href="/clases">Clases</Link></li>
           <li><Link href="/crochet">Crochet</Link></li>
-          <li><Link href="/sobre-nosotros">Sobre nosotros</Link></li>
+          <li><Link href="/nosotros">Sobre nosotros</Link></li>
         </ul>
 
         <div className="hidden lg:flex lg:items-center lg:space-x-4">
