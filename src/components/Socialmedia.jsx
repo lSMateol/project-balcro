@@ -109,7 +109,7 @@ export default function SocialMedia() {
 
       <li style={styles.menuItem(0)}>
         <a 
-          href="#" 
+          href="https://www.instagram.com/tejiendoritmosysaberes.of/profilecard/?igsh=MWF0MGpsZHE1ODE1dA==" 
           style={{
             ...styles.link, 
             background: 'radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%)'
@@ -133,7 +133,7 @@ export default function SocialMedia() {
       </li>
       <li style={styles.menuItem(2)}>
         <a 
-          href="#" 
+          href="https://www.tiktok.com/@tejiendoritmossab?_t=8rLqXs0bx83&_r=1" 
           style={{
             ...styles.link, 
             background: '#000000'

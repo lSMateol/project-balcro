@@ -41,21 +41,21 @@ export default function Component() {
                 {socialIcons.facebook}
               </a>
               <a 
-                href="#" 
+                href="https://www.instagram.com/tejiendoritmosysaberes.of/profilecard/?igsh=MWF0MGpsZHE1ODE1dA==" 
                 className="text-white hover:text-gray-300 transition-colors"
                 aria-label="Instagram"
               >
                 {socialIcons.instagram}
               </a>
               <a 
-                href="#" 
+                href="https://www.tiktok.com/@tejiendoritmossab?_t=8rLqXs0bx83&_r=1" 
                 className="text-white hover:text-gray-300 transition-colors"
                 aria-label="TikTok"
               >
                 {socialIcons.tiktok}
               </a>
               <a 
-                href="#" 
+                href="https://wa.me/c/573502204664" 
                 className="text-white hover:text-gray-300 transition-colors"
                 aria-label="WhatsApp"
               >
