@@ -30,7 +30,7 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "eslint": "^8",
+    "eslint": "^7",
     "eslint-config-next": "15.0.3",
     "postcss": "^8",
     "prisma": "^5.22.0",
