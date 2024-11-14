@@ -1,46 +1,40 @@
 import NextAuth from "next-auth";
-import CredentialsProviders from 'next-auth/providers/credentials'
-import db from '@/lib/db'
-import bcrypt from 'bcrypt'
+import CredentialsProvider from 'next-auth/providers/credentials';
+import db from '@/lib/db';
+import bcrypt from 'bcrypt';
 
 const authOptions = {
-    providers: [
-        CredentialsProviders({
-            name: "Credentials",
-            credentials:{
-                email:{label: "Email", type: "text", placeholder: "jsmith"},
-                password:{label: "Email", type: "password", placeholder: "********"}
-            },
-            async authorize (credentials, req){ 
-                console.log(credentials);
+  providers: [
+    CredentialsProvider({
+      name: "Credentials",
+      credentials: {
+        email: { label: "Email", type: "text", placeholder: "jsmith" },
+        password: { label: "Password", type: "password", placeholder: "********" }
+      },
+      async authorize(credentials, req) {
+        try {
+          const userFound = await db.User.findUnique({
+            where: { email: credentials.email }
+          });
+          if (!userFound) throw new Error("No user found");
 
-                const userFound = await db.User.findUnique({
-                    where:{
-                        email:credentials.email
-                    }
-                })
+          const matchPassword = await bcrypt.compare(credentials.password, userFound.password);
+          if (!matchPassword) throw new Error("Wrong password");
 
-                if(!userFound) throw new Error ("No user found")
-
-                console.log(userFound)
-
-                const matchPassword= await bcrypt.compare(credentials.password, userFound.password)
-
-                if(!matchPassword) throw new Error ("Wrong Password")
-
-                return {
-                    id: userFound.id,
-                    name: userFound.username,
-                    email: userFound.email,
-                };
-            }
-        })
-    ],
-    pages: {
-        signIn: "/auth/login"      
-    }
+          return { id: userFound.id, name: userFound.username, email: userFound.email };
+        } catch (error) {
+          console.error("Authentication error:", error);
+          throw new Error("Authentication failed");
+        }
+      }
+    })
+  ],
+  pages: {
+    signIn: "/auth/login"
+  },
+  secret: process.env.NEXTAUTH_SECRET
 };
 
 const handler = NextAuth(authOptions);
 
-export {handler as GET, handler as POST};
+export { handler as GET, handler as POST };
