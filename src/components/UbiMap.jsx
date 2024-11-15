@@ -3,12 +3,11 @@ export default function Component() {
       <section className="bg-[#ffebee] py-8">
         <div className="container mx-auto px-4 grid md:grid-cols-2 gap-6 items-center">
           <div className="space-y-4">
-            <h2 className="text-3xl font-bold text-[#69c7ee]">
+            <h2 className="text-3xl font-bold text-[#0077a3]">
               ¿Dónde nos encontramos?
-            </h2>
-            
+            </h2>            
             <div>
-              <h3 className="text-xl font-semibold text-[#9c6fb6]">
+              <h3 className="text-xl font-semibold text-[#7a5195]">
                 Estamos ubicados en
               </h3>
               <p className="text-gray-700">[Dirección del estudio]</p>
@@ -33,6 +32,7 @@ export default function Component() {
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
+              title="Ubicacion en Google Maps"
               referrerPolicy="no-referrer-when-downgrade"
               className="w-full h-full"
             ></iframe>
